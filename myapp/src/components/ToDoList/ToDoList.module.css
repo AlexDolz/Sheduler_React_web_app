@@ -80,12 +80,12 @@
 }
 @media (max-width: 608px) {
   .todo__list__items {
-    grid-template-columns: repeat(1, 375px);
+    grid-template-columns: 375px;
   }
 }
 @media (max-width: 570px) {
   .todo__list__items {
-    grid-template-columns: repeat(1, 300px);
+    grid-template-columns: 300px;
   }
   .todo__day {
     margin-right: 18px;
@@ -93,12 +93,24 @@
 }
 @media (max-width: 488px) {
   .todo__list__items {
-    grid-template-columns: repeat(1, 220px);
+    grid-template-columns: 220px;
   }
 }
 @media (max-width: 400px) {
   .todo__list__items {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 200px;
+    margin-right: 15px;
+  }
+}
+@media (max-width: 370px) {
+  .todo__list__items {
+    grid-template-columns: 180px;
+    margin-right: 15px;
+  }
+}
+@media (max-width: 345px) {
+  .todo__list__items {
+    grid-template-columns: 155px;
     margin-right: 15px;
   }
 }
