@@ -85,15 +85,30 @@
 }
 @media (max-width: 570px) {
   .todo__list__items {
-    grid-template-columns: 300px;
+    grid-template-columns: 350px;
   }
   .todo__day {
     margin-right: 18px;
   }
 }
+@media (max-width: 516px) {
+  .todo__list__items {
+    grid-template-columns: 321px;
+  }
+}
 @media (max-width: 488px) {
   .todo__list__items {
-    grid-template-columns: 220px;
+    grid-template-columns: 280px;
+  }
+}
+@media (max-width: 450px) {
+  .todo__list__items {
+    grid-template-columns: 260px;
+  }
+}
+@media (max-width: 426px) {
+  .todo__list__items {
+    grid-template-columns: 240px;
   }
 }
 @media (max-width: 400px) {
