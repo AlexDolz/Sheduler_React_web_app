@@ -87,6 +87,9 @@
   .todo__list__items {
     grid-template-columns: repeat(1, 300px);
   }
+  .todo__day {
+    margin-right: 18px;
+  }
 }
 @media (max-width: 488px) {
   .todo__list__items {

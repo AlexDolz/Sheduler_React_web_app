@@ -4,6 +4,7 @@
   flex-direction: column;
   gap: 43px;
   cursor: pointer;
+  margin-bottom: 40px;
 }
 
 ul {
