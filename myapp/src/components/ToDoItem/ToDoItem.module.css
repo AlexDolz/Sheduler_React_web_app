@@ -1,0 +1,19 @@
+.todo__item {
+  padding: 4px 17px;
+  color: #ecf0f1;
+  position: relative;
+}
+
+.close__btn {
+  position: absolute;
+  top: -11px;
+  right: -13px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px 6px;
+  font-size: 18px;
+  line-height: 1;
+  background: #e74c3c;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}

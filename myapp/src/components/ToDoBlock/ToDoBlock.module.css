@@ -1,0 +1,11 @@
+.todo__block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}

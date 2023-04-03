@@ -1,0 +1,143 @@
+.day__importance__block {
+  display: flex;
+  gap: 34px;
+  margin-bottom: 24px;
+}
+
+.day__form,
+.importance__form {
+  width: 209px;
+  height: 45px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  background-image: url('./media/form_arrow.png');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 12px) center;
+  background-size: 24px;
+  cursor: pointer;
+  padding: 7px;
+  outline: none;
+}
+select {
+  transition: all 0.3s ease;
+}
+select:hover {
+  background-color: #dddddd9c;
+}
+option {
+  transition: all 0.3s ease;
+}
+option:hover {
+  background-color: #dddddd9c;
+}
+.importance__form {
+  width: 235px;
+}
+.form {
+  position: relative;
+}
+.form::after {
+  content: '';
+  width: 1px;
+  height: 45px;
+  background: black;
+  position: absolute;
+  left: 431px;
+  top: 0;
+  cursor: pointer;
+}
+.day__importance__block {
+  position: relative;
+}
+
+.day__importance__block::after {
+  content: '';
+  width: 1px;
+  height: 45px;
+  background: black;
+  position: absolute;
+  left: 161px;
+  top: 0;
+  cursor: pointer;
+}
+
+.description__button__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description__input {
+  width: 478.5px;
+  height: 45px;
+  padding: 7px 8px 7px 18px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.description__input::placeholder {
+  color: #000000;
+}
+
+.submit__btn {
+  width: 163px;
+  height: 45px;
+  background: #1abc9c;
+  border: 1px solid #000000;
+  border-radius: 23px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  margin-right: 63px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.submit__btn:hover {
+  background: #047d65b7;
+}
+
+@media (max-width: 842px) {
+  .submit__btn {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 763px) {
+  .description__button__block {
+    display: block;
+  }
+  .submit__btn {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 483px;
+  }
+}
+@media (max-width: 570px) {
+  .day__importance__block {
+    flex-direction: column;
+  }
+  .form::after {
+    left: 188px;
+    top: 78px;
+  }
+  .description__input {
+    width: 91%;
+  }
+  .submit__btn {
+    width: 91%;
+  }
+}
