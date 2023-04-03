@@ -17,6 +17,9 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
+.todo__item p {
+  overflow-wrap: break-word;
+}
 
 @media (max-width: 400px) {
   .todo__item p {
