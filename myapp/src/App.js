@@ -27,9 +27,7 @@ const App = () => {
     days.sort((a, b) => a - b);
     setDays(days);
 
-    event.target.day.value = '';
-    event.target.importance.value = '';
-    event.target.description.value = '';
+    event.target.reset();
   };
   days.sort((a, b) => +b.day - +a.day);
 
@@ -39,7 +37,27 @@ const App = () => {
   };
 
   const removeTodo = id => {
-    setTodos(todos.filter(elem => elem.id !== id));
+    const updatedTodos = todos.filter(todo => todo.id !== id);
+    const deletedTodo = todos.find(todo => todo.id === id);
+    setTodos(updatedTodos);
+
+    const remainingTodosForDay = updatedTodos.filter(
+      todo => todo.day === deletedTodo.day
+    );
+    if (remainingTodosForDay.length === 0) {
+      const updatedDays = days.filter(day => day !== deletedTodo.day);
+      setDays(updatedDays);
+    }
+  };
+
+  const changeImportance = id => {
+    let updatedTodo = todos.map(elem => {
+      if (elem.id === id) {
+        elem.importance = elem.importance === '0' ? '1' : '0';
+      }
+      return elem;
+    });
+    setTodos(updatedTodo);
   };
 
   return (
@@ -51,6 +69,7 @@ const App = () => {
           todos={todos}
           removeDay={removeDay}
           removeTodo={removeTodo}
+          changeImportance={changeImportance}
         />
       </div>
     </div>

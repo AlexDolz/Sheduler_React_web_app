@@ -94,21 +94,25 @@ option:hover {
 .submit__btn {
   width: 163px;
   height: 45px;
-  background: #1abc9c;
-  border: 1px solid #000000;
-  border-radius: 23px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  color: #ffffff;
   margin-right: 63px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  border: none;
+  background-color: cornflowerblue;
+  border-radius: 20px;
+  color: #fff;
+  transition: 0.3s;
 }
 .submit__btn:hover {
-  background: #047d65b7;
+  background: rgba(100, 148, 237, 0.856);
+  box-shadow: 8px 8px #99bdff;
+}
+.submit__btn:active {
+  padding-top: 3px;
 }
 
 @media (max-width: 842px) {

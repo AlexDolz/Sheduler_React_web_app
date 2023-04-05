@@ -29,7 +29,7 @@ const AddPlanForm = ({ formSubmit }) => {
           required
         ></input>
         <button type='submit' className={s.submit__btn}>
-          Add
+          Add task
         </button>
       </div>
     </form>

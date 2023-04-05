@@ -2,7 +2,13 @@ import React from 'react';
 import ToDoList from '../ToDoList/ToDoList';
 import s from './ToDoBlock.module.css';
 
-export const ToDoBlock = ({ days, todos, removeDay, removeTodo }) => {
+export const ToDoBlock = ({
+  days,
+  todos,
+  removeDay,
+  removeTodo,
+  changeImportance,
+}) => {
   return (
     <ul className={s.todo__block}>
       {days.map((elem, index) => (
@@ -12,6 +18,7 @@ export const ToDoBlock = ({ days, todos, removeDay, removeTodo }) => {
           todos={todos}
           removeDay={removeDay}
           removeTodo={removeTodo}
+          changeImportance={changeImportance}
         />
       ))}
     </ul>

@@ -1,7 +1,13 @@
 import { useState } from 'react';
 import s from './ToDoItem.module.css';
 
-const ToDoItem = ({ importance, description, removeTodo, id }) => {
+const ToDoItem = ({
+  importance,
+  description,
+  removeTodo,
+  id,
+  changeImportance,
+}) => {
   const itemStyles = {
     background: importance === '1' ? '#1ABC9C' : '#E74C3C',
   };
@@ -22,10 +28,12 @@ const ToDoItem = ({ importance, description, removeTodo, id }) => {
   };
   return (
     <li
+      title='Change priority on double click'
       style={itemStyles}
       className={s.todo__item}
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
+      onDoubleClick={() => changeImportance(id)}
     >
       <div>
         <p>{description}</p>

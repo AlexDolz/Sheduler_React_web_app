@@ -2,7 +2,7 @@ import { useState } from 'react';
 import ToDoItem from '../ToDoItem/ToDoItem';
 import s from './ToDoList.module.css';
 
-const ToDoList = ({ day, todos, removeDay, removeTodo }) => {
+const ToDoList = ({ day, todos, removeDay, removeTodo, changeImportance }) => {
   const dayNames = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
   let [isHovered, setIsHovered] = useState(false);
@@ -43,6 +43,7 @@ const ToDoList = ({ day, todos, removeDay, removeTodo }) => {
                 importance={elem.importance}
                 description={elem.description}
                 removeTodo={removeTodo}
+                changeImportance={changeImportance}
               />
             );
           }
