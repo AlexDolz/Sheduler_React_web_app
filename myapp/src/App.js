@@ -1,6 +1,6 @@
 import './App.css';
 import FormBlock from './components/FormBlock/FormBlock';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ToDoBlock } from './components/ToDoBlock/ToDoBlock';
 
 const App = () => {
@@ -59,6 +59,20 @@ const App = () => {
     });
     setTodos(updatedTodo);
   };
+
+  useEffect(() => {
+    let updatedTodo = JSON.parse(localStorage.getItem('todos')) || todos;
+    let updatedDays = JSON.parse(localStorage.getItem('days')) || days;
+    setDays(updatedDays);
+    setTodos(updatedTodo);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('days', JSON.stringify(days));
+  }, [days]);
+  useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }, [todos]);
 
   return (
     <div>
