@@ -119,6 +119,12 @@ option:hover {
   .submit__btn {
     margin-right: 10px;
   }
+  option:hover {
+    background-color: white;
+  }
+  select:hover {
+    background-color: white;
+  }
 }
 @media (max-width: 763px) {
   .description__button__block {
@@ -143,5 +149,11 @@ option:hover {
   }
   .submit__btn {
     width: 91%;
+  }
+  .day__importance__block {
+    margin-bottom: 34px;
+  }
+  .submit__btn {
+    margin: 34px 0;
   }
 }
