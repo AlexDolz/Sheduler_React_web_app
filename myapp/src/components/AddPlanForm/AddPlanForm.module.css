@@ -119,6 +119,12 @@ option:hover {
   .submit__btn {
     margin-right: 10px;
   }
+  option {
+    background-color: white;
+  }
+  select {
+    background-color: white;
+  }
   option:hover {
     background-color: white;
   }
