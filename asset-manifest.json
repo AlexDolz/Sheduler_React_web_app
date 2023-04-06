@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Sheduler_React_web_app/static/css/main.d8dbb2e9.css",
+    "main.css": "/Sheduler_React_web_app/static/css/main.b0dd0bf5.css",
     "main.js": "/Sheduler_React_web_app/static/js/main.595a26e9.js",
     "index.html": "/Sheduler_React_web_app/index.html",
-    "main.d8dbb2e9.css.map": "/Sheduler_React_web_app/static/css/main.d8dbb2e9.css.map",
+    "main.b0dd0bf5.css.map": "/Sheduler_React_web_app/static/css/main.b0dd0bf5.css.map",
     "main.595a26e9.js.map": "/Sheduler_React_web_app/static/js/main.595a26e9.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8dbb2e9.css",
+    "static/css/main.b0dd0bf5.css",
     "static/js/main.595a26e9.js"
   ]
 }
